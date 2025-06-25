@@ -1,8 +1,10 @@
 import './Header.css'
+import logo from '../../images/iteration-1-images/logo.svg';
 export default function Header(){
     return (
-        <header style={{width:"100%"}}><h1 style={{margin:"0", padding:"1rem"}}>Teknolojik Yemekler</h1>
-        <p className='container'>Ana Sayfa - Seçenekler - <span>Sipariş Oluştur</span></p>
+        <header style={{ width: "100%" }}>
+            <img src={logo} alt="" style={{marginTop:"30px"}}/>
+            
         </header>
-    )
+    );
 }

@@ -1,15 +1,74 @@
+body {
+    background-color: white;
+}
+.formBanner {
+    background-color: #FAF7F2; 
+    width: 100%;                      
+}
+.radio-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.radio-label {
+    position: relative;
+    cursor: pointer;
+    background-color: #FAF7F2;
+    border-radius: 50%;
+}
+
+.radio-label input[type="radio"] {
+    display: none; /* Orijinal radio butonunu gizler */
+}
+
+.custom-radio {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: 400;
+    color: #5F5F5F;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.radio-label input[type="radio"]:checked + .custom-radio {
+    background-color: #292929;
+    color: white;
+}
+
+.icerikKapsayici {
+    width: 600px;             
+    margin: 0 auto;   
+    padding-bottom: 10px;         
+}
+.icerikKapsayici .resim {
+  background-image: url("../../images/iteration-2-images/pictures/form-banner.png");
+  background-position:  bottom;
+  background-size: cover;
+  height: 200px;
+  margin-bottom: 50px;
+
+}
 .baslik {
     font-size: 35px;
     text-align: left;
+    margin-top: 30px
 }
 .fiyatBar {
     display: flex;
     justify-content: space-between;
-    
+    margin-top: 50px;
 }
 p {
     text-align: left;
+    font-weight: 300;
+    color: #5F5F5F;
 }
+
 .fiyatBar .fiyat {
     flex: 100%;
     text-align: left;
@@ -24,9 +83,26 @@ p {
 
     
 }
+nav span {
+    
+    color: #CE2829;
+}
+nav a {
+    color: #5F5F5F;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
 .container {
     width: 600px;
     margin: auto;
+}
+.container2 {
+    width: 600px;
+    margin: 10px auto 50px;
+    
 }
 .size {
     display: flex;
@@ -36,11 +112,45 @@ p {
 }
 .boyut {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 9rem;
+    margin-top: 2rem;
 }
 .kalinlik {
     margin-right: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
+
+.kalinlik h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.select-box {
+    padding: 0.75rem 6rem 0.75rem 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #FAF7F2;
+    font-size: 1rem;
+    color: #5F5F5F;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='none' stroke='%23999' stroke-width='1.5' d='M1 1l4 4 4-4'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 10px 6px;
+}
+
+.select-box:focus {
+    outline: 2px solid #292929;
+}
+
+option {
+    color: #333;
+}
+
 .baslik3 {
     text-align: left;
     margin-top: 4rem;

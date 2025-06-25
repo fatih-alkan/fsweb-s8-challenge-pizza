@@ -1,0 +1,27 @@
+.sipOnay {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 30px;
+    background-color: #CE2829;
+    margin: 0;
+    padding: 0;
+}
+.sipOnay img {
+    margin-top: 30px;
+}
+.sipOnay div {
+    text-align: center;
+    margin-top: 150px;
+}
+.sipOnay h3 {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 5px;
+}

@@ -1,0 +1,118 @@
+.home {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    height: 100vh;
+    width: 99vw;
+    margin-top: 30px;
+    background-image: url(../../images/iteration-1-images/home-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.home h3 {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
+}
+.home img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.home button {
+    background-color: #FDC913;
+}
+.container1 {
+    width: 1050px;
+    margin: auto;
+}
+.navbar1{
+    width: 100%;
+    text-align: center;
+}
+.navbar1 a{
+    margin-left: 50px;
+}
+.kart-1 {
+    background-image: url(../../images/iteration-2-images/cta/kart-1.png);
+    background-position: center;
+    background-size: cover;
+}
+.kart-1-yazi-col {
+    color: white;
+    height: 350px;
+}
+.kart-1-yazi-col .card-button {
+    color: #CE2829;
+    font-size: 15px;
+    font-weight: 500!important;
+    border-radius: 20px;
+    padding: 10px;
+}
+.kartlar {
+    display: flex;
+    margin-top: 100px;
+}
+.right-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.kart-2 {
+    background-image: url(../../images/iteration-2-images/cta/kart-2.png);
+    background-position: center;
+    background-size: cover;
+}
+.kart-2-yazi-col {
+    color: white;
+    height: 130px;
+}
+.kart-2-yazi-col .card-button {
+    color: #CE2829;
+    font-size: 15px;
+    font-weight: 500!important;
+    border-radius: 20px;
+    padding: 10px;
+}
+.kart-3 {
+    background-image: url(../../images/iteration-2-images/cta/kart-3.png);
+    background-position: center;
+    background-size: cover;
+}
+.kart-3-yazi-col {
+    color: black;
+    height: 130px;
+}
+.kart-3-yazi-col .card-button {
+    color: #CE2829;
+    font-size: 15px;
+    font-weight: 500!important;
+    border-radius: 20px;
+    padding: 10px;
+}
+.kart-3-yazi-col span {
+    color: #CE2829;
+}
+.elyazi {
+    font-family: 'Satisfy', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    color: #CE2829;
+}
+.navbar2 a{
+    margin-left: 40px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px 20px!important;
+    font-weight: 500;
+    
+}
+.genel {
+    background-color: #FAF7F2;
+}
