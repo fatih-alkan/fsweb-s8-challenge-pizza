@@ -11,6 +11,7 @@ import icon4 from '../../images/iteration-2-images/icons/4.svg';
 import icon5 from '../../images/iteration-2-images/icons/5.svg';
 import icon6 from '../../images/iteration-2-images/icons/6.svg';
 import { Card, Button, Row, Col } from 'react-bootstrap';
+import Footer from "./Footer";
 export default function HomePage(){
     const history = useHistory();
     function handleClick(){
@@ -60,6 +61,7 @@ export default function HomePage(){
             
             <div className="home">
                 <img src={logo} alt="" />
+                <span className="elyazi">fırsatı kaçırma</span>
                 <h3>KOD ACIKTIRIR</h3>
                 <h3>PİZZA, DOYURUR</h3>
                 <button className="aciktim" onClick={handleClick}>ACIKTIM</button>
@@ -85,8 +87,8 @@ export default function HomePage(){
                     <Row>
                     <Col md={7} className="kart-1-yazi-col">
                         <h1 className="mb-3 fw-bold">Özel Lezzetus</h1>
-                        <p className="mb-4">Position: Absolute Acı Burger</p>
-                        <Button variant="light" className="fw-bold custom-btn card-button">SİPARİŞ VER</Button>
+                        <p className="mb-4" style={{color:"white"}}>Position: Absolute Acı Burger</p>
+                        <Button variant="light" className="fw-bold custom-btn card-button" onClick={handleClick}>SİPARİŞ VER</Button>
                     </Col>
                     
                     </Row>
@@ -98,7 +100,7 @@ export default function HomePage(){
                     <Row>
                     <Col md={7} className="kart-2-yazi-col">
                         <h2 className="mb-3 fw-bold">Hackathlon Burger Menü</h2>
-                        <Button variant="light" className="fw-bold custom-btn card-button">SİPARİŞ VER</Button>
+                        <Button variant="light" className="fw-bold custom-btn card-button" onClick={handleClick}>SİPARİŞ VER</Button>
                     </Col>
                     
                     </Row>
@@ -109,7 +111,7 @@ export default function HomePage(){
                     <Row>
                     <Col md={7} className="kart-3-yazi-col">
                         <h2 className="mb-3 fw-bold"><span>Çoooook</span> hızlı npm gibi kurye</h2>
-                        <Button variant="light" className="fw-bold custom-btn card-button">SİPARİŞ VER</Button>
+                        <Button variant="light" className="fw-bold custom-btn card-button" onClick={handleClick}>SİPARİŞ VER</Button>
                     </Col>
                     
                     </Row>
@@ -117,7 +119,7 @@ export default function HomePage(){
                 </Container>
                 </div>
             </div>
-            <div className="container1" style={{textAlign:"center", marginTop:"100px"}}>
+            <div className="container1 tata" style={{textAlign:"center", marginTop:"100px"}}>
                 <span className="elyazi">en çok paketlenen menüler</span>
                 <h2>Acıktıran Kodlara Doyuran Lezzetler</h2>
             </div>
@@ -167,6 +169,7 @@ export default function HomePage(){
                         </Row>
                     </Container>
                 </div>
+                 <Footer/>           
             </div>
             
         </>

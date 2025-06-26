@@ -1,9 +1,14 @@
 body {
     background-color: white;
+    overflow-x: hidden;
 }
 .formBanner {
     background-color: #FAF7F2; 
-    width: 100%;                      
+    width: 100%;   
+    padding-top: 0!important;                   
+}
+.formBanner img {
+    margin: 0 auto;
 }
 .radio-group {
     display: flex;
@@ -19,7 +24,7 @@ body {
 }
 
 .radio-label input[type="radio"] {
-    display: none; /* Orijinal radio butonunu gizler */
+    display: none; 
 }
 
 .custom-radio {
@@ -45,13 +50,8 @@ body {
     margin: 0 auto;   
     padding-bottom: 10px;         
 }
-.icerikKapsayici .resim {
-  background-image: url("../../images/iteration-2-images/pictures/form-banner.png");
-  background-position:  bottom;
-  background-size: cover;
-  height: 200px;
-  margin-bottom: 50px;
-
+.formBanner nav {
+    margin-top: 60px;
 }
 .baslik {
     font-size: 35px;
@@ -124,7 +124,7 @@ nav a {
 }
 
 .kalinlik h3 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -158,15 +158,46 @@ option {
 .malzeme-listesi {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px 24px; /* satır ve sütun aralığı */
-  max-width: 600px; /* genişlik kontrolü */
+  gap: 12px 24px; 
+  max-width: 600px; 
 }
 
 .malzeme-item {
   display: flex;
   align-items: center;
   gap: 8px;
-  width: 30%; /* 3 sütunluk düzen için */
+  width: 30%;
+  cursor: pointer;
+}
+
+.malzeme-item input[type="checkbox"] {
+  display: none; 
+}
+
+.custom-checkbox {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  position: relative;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.malzeme-item.secili .custom-checkbox {
+  background-color: #FDC913; 
+  border-color: #FDC913;
+}
+
+.malzeme-item.secili .custom-checkbox::after {
+  content: '✓'; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: black;
 }
 .textNot {
     width: 100%;
@@ -175,7 +206,7 @@ option {
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 14px;
-  resize: none; /* Yeniden boyutlandırmayı engeller */
+  resize: none;
   outline: none;
   box-sizing: border-box;
   margin-bottom: 20px;
@@ -193,7 +224,7 @@ margin-top: 2rem;
 .sayac p {
     display: flex;
     align-items: center;
-    border: 0.5px solid #5F5F5F;
+    border: 0.5px solid #aaa;
     border-radius: 5px;
     height: 100%;
     margin: 0;
@@ -203,12 +234,13 @@ margin-top: 2rem;
     height: 100%;
     width: 3rem;
     background-color: #FDC913;
+    border-radius: 8px;
     margin: 0;
     
 }
 .siparisDetay { 
     max-width: 500px;
-    height: 250px;
+    height: 258px;
   border: 1px solid #ddd;
   border-radius: 8px;
   flex: 60%;
@@ -227,8 +259,9 @@ margin-top: 2rem;
 }
 
 .siparisButon {
-  margin-top: 16px;
-  width: 100%;
+    position: absolute;
+  margin: 203px 0 0 210px;
+  width: 390px;
   padding: 15px;
   background-color: #FDC913;
   color: black;
@@ -236,7 +269,60 @@ margin-top: 2rem;
   border-radius: 4px;
   cursor: pointer;
 }
-.headerWrapper {
-  width: 99vw;
-  margin: 0;
+.siparisButon:hover {
+  color: black;
+  border: 1px solid black;
 }
+.siparisButon:disabled {
+    background-color: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+.headerWrapper {
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+    html {
+        width: 100vw;
+    }
+    .formBanner img {
+        display: none;
+    }
+    .formBanner nav {
+    margin-top: 0px;
+    }
+    .icerikKapsayici {
+        padding-top: 30px;
+    }
+    .malzeme-item {
+        width:45% ;
+        gap: 1rem;
+    }
+    .onay {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .sayac {
+        order: 3;
+        margin-left: 130px;
+    }
+    .sayac p{
+        height: 45px;
+    }
+    .siparisDetay {
+        height: 50px;
+        width: 400px;
+        align-self: center;
+
+    }
+    .siparisButon {
+        width: 200px;
+        height: 50px;
+        margin-top: 200px;
+        margin-left: 270px;
+        position: absolute;
+
+    }
+}
+   

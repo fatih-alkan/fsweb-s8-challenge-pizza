@@ -1,0 +1,81 @@
+.footer {
+    height: 500px;
+    width: 100vw;
+    background-color: black!important;
+    color: white;
+    margin: 0;
+    padding-top: 70px;
+}
+.rowB {
+    display: flex;
+    gap: 100px;
+}
+.rowA {
+    display: flex;
+    justify-content: space-around;
+}
+.row img {
+    width: 200px;
+}
+.row1 {
+    display: flex;
+    gap: 10px;
+}
+.row1 img {
+    width: 25px;
+    margin-bottom: 30px;
+}
+.row1 p {
+    color: white;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.column2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.column p {
+    color: white;
+}
+.column1 p {
+    color: white;
+}
+.row2 {
+    display: flex;
+    gap: 10px;
+}
+.row2 img {
+    width: 70px;
+    margin-bottom: 30px;
+}
+.rowC {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 12rem;
+}
+@media (max-width: 768px) {
+    .footer {
+        height: 1200px;
+        background-color: black;
+        padding-left: 4rem;
+    }
+    .rowB{
+        flex-direction: column;
+        gap: 4rem
+    }
+    .rowA{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .resim {
+        width: 300px;
+        margin-bottom: 2rem;
+    }
+    .sipOnay {
+        height: 100vh;
+    }
+}
