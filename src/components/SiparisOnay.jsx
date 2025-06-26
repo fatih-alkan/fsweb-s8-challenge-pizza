@@ -1,7 +1,11 @@
 import logo from '../../images/iteration-1-images/logo.svg';
 import './SiparisOnay.css'
-import { useLocation } from "react-router-dom";
+import { useLocation, useHistory } from "react-router-dom";
 export default function SiparisOnay() {
+    const history = useHistory();
+        function handleClick(){
+            history.push("./")
+        }
     const location = useLocation();
     const { boyut, hamur, malzemeler, malzemeFiyat, malzemeSayisi, toplamFiyat, adet } = location.state ;
 
@@ -35,6 +39,7 @@ export default function SiparisOnay() {
                         </div>
                     </div>
             </div>
+            <button className="btn-anaSayfa" onClick={handleClick}>ANA SAYFA</button>
         </div>
         </>
     )

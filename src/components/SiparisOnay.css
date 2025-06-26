@@ -6,14 +6,21 @@
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    height: 100%;
+    height: 100vh;
     width: 100vw;
     margin-top: 30px;
     background-color: #CE2829;
     margin: 0;
     padding-top: 30px;
 }
-
+.btn-anaSayfa {
+    background-color: #FDC913;
+    border-radius: 15px;
+}
+.btn-anaSayfa:hover {
+    background-color: white;
+    border: 2px solid #FDC913;
+}
 .sipOnay div {
     text-align: center;
 
