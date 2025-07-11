@@ -16,6 +16,9 @@
 .btn-anaSayfa {
     background-color: #FDC913;
     border-radius: 15px;
+    position: absolute;
+    margin-top: 650px;
+    margin-left:500px;
 }
 .btn-anaSayfa:hover {
     background-color: white;
@@ -32,7 +35,7 @@
 }
 .siparisDetay2 {
     max-width: 400px;
-    height: 200px;
+    height: 180px;
   border: 1px solid #ddd;
   border-radius: 8px;
   margin-top: 20px;
@@ -45,7 +48,7 @@
     font-weight: 400;
 }
 ul {
-    width: 170px;
+    width: 190px;
     padding-left: 0rem!important;
     margin: 20px auto 0!important;
 }
@@ -57,5 +60,9 @@ ul li {
 @media (max-width: 768px) {
     .sipOnay {
         height: 100vh;
+    }
+    .btn-anaSayfa {
+        position: relative;
+        margin: 0;
     }
 }

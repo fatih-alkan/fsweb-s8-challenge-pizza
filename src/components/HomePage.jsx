@@ -18,20 +18,20 @@ export default function HomePage(){
         history.push("./SiparisForm")
     }
     const navItems = [
-    { name: 'YENİ! Kore', href: '#home', icon: icon1 },
-    { name: 'Pizza', href: '#features', icon: icon2 },
-    { name: 'Burger', href: '#pricing', icon: icon3 },
-    { name: 'Kızartmalar', href: '#about', icon: icon4 },
-    { name: 'Fast Food', href: '#contact', icon: icon5 },
-    { name: 'Gazlı İçecek', href: '#help', icon: icon6 },
+    { name: 'YENİ! Kore', href: './SiparisForm', icon: icon1 },
+    { name: 'Pizza', href: './SiparisForm', icon: icon2 },
+    { name: 'Burger', href: './SiparisForm', icon: icon3 },
+    { name: 'Kızartmalar', href: './SiparisForm', icon: icon4 },
+    { name: 'Fast Food', href: './SiparisForm', icon: icon5 },
+    { name: 'Gazlı İçecek', href: './SiparisForm', icon: icon6 },
     ];
     const navItems2 = [
-    { name: 'Ramen', href: '#home', icon: icon1 },
-    { name: 'Pizza', href: '#features', icon: icon2 },
-    { name: 'Burger', href: '#pricing', icon: icon3 },
-    { name: 'French fries', href: '#about', icon: icon4 },
-    { name: 'Fast Food', href: '#contact', icon: icon5 },
-    { name: 'Soft drinks', href: '#help', icon: icon6 },
+    { name: 'Ramen', href: './SiparisForm', icon: icon1 },
+    { name: 'Pizza', href: './SiparisForm', icon: icon2 },
+    { name: 'Burger', href: './SiparisForm', icon: icon3 },
+    { name: 'French fries', href: './SiparisForm', icon: icon4 },
+    { name: 'Fast Food', href: './SiparisForm', icon: icon5 },
+    { name: 'Soft drinks', href: './SiparisForm', icon: icon6 },
     ];
     const products = [
     {
